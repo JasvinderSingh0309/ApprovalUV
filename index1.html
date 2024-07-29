@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Approval</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(128, 128, 128);
+      font: 16px;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    main,
+    .building,
+    .visitor-box{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    main{
+      height: 100vh;
+    }
+
+    .building {
+      font-size: 1.5rem;
+      color: white;
+      gap: 4px;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+    .host-name{
+      letter-spacing: 3px;
+    }
+
+    .visitor-box{
+      background-color: white;
+      width: 90%;
+      max-width: 370px;
+      padding: 30px;
+      border-radius: 1.2rem;
+      box-shadow: 0 0 10px rgba(66, 66, 66, 0.686);
+    }
+    .visitor-box p {
+      font-size: 1.2rem;
+      color: rgba(128, 128, 128, 0.543);
+    }
+    .visitor-box img {
+      width: 90px;
+      margin-top: 20px;
+      border-radius: 50%;
+    }
+    .visitor-box .v-name {
+      font-size: 1.8rem;
+      margin-top: 4px;
+      color: black;
+    }
+    .visitor-box>div {
+      margin-top: 2.8rem;
+      display: flex;
+      gap: 80px;
+    }
+    .visitor-box>div>button {
+      border: none;
+      background: transparent;
+    }
+    .visitor-box>div>button>i {
+      font-size: 5rem;
+      color: red;
+    }
+    .visitor-box>div>button:nth-child(2)>i {
+      color: green;
+    }
+
+    @media (max-width:350px) {
+      .visitor-box p {
+        font-size: 1rem;
+      }
+      .visitor-box>div {
+        gap: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="building">
+      <p class="building-name">UV 1537</p>
+      <p class="host-name">Balbeer Singh</p>
+    </div>
+
+    <div class="visitor-box">
+      <p>Guest is waiting at the gate!!</p>
+      <img src="https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-business-user-profile-vector-png-image_1541960.jpg" alt="host-image">
+      <p class="v-name">Visitor Name</p>
+      <div>
+        <button><i class='bx bx-x-circle'></i></button>
+        <button><i class='bx bxs-check-circle'></i></button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
